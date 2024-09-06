@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definindo a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configurando a página para ser responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>O que é Inteligência Emocional?</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pano">
+    <!-- Cabeçalho do site -->
+    <header>
+        <!-- Título principal da página -->
+        <h1>Inteligência Emocional</h1>
+
+        <!-- Menu de navegação principal -->
+        <nav>
+            <ul>
+                <!-- Links de navegação para outras páginas com títulos explicativos -->
+                <li><a href="01_pag_o_que.html" title="O que é inteligência emocional?">O que é</a></li>
+                <li><a href="03_pag_beneficios.html" title="Benefícios da inteligência emocional">Benefícios</a></li>
+                <li><a href="04_pag_como_desenvolvar.html" title="Como desenvolver a inteligência emocional">Como Desenvolver</a></li>
+                <li><a href="02_pag_os_pilares.html" title="Os 5 pilares da inteligência emocional">Os 5 Pilares</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção de pesquisa -->
+        <section>
+            <!-- Campo de entrada de texto para a pesquisa -->
+            <input type="text" placeholder="Vamos começar! Digite aqui motivação, autocontrole, mindfulness..." id="campo-pesquisa">
+            <!-- Botão de pesquisa com função JavaScript associada -->
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+
+        <!-- Seção que exibirá os resultados da pesquisa -->
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Os resultados da pesquisa serão inseridos aqui dinamicamente -->
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p class="item-branco">&copy; 2024 Thiago Alencar. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Inclusão de arquivos JavaScript -->
+    <script src="dados.js"></script> <!-- Este arquivo provavelmente contém os dados de atletas ou esportes -->
+    <script src="app.js"></script> <!-- Este arquivo contém a lógica de pesquisa -->
+</body>
+
+</html>

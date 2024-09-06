@@ -1,0 +1,213 @@
+:root {
+  --primary-color: #908f29; /* Cor principal */
+  --secondary-color: #f5f5f5; /* Cor secundária clara */
+  --accent-color: #1a7d11; /* Cor de destaque */
+  --font-family: 'Roboto', sans-serif; /* Fonte principal */
+}
+
+/* Estilos globais */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('imgs/pano.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* A imagem permanece fixa no fundo */
+  background-position: center;
+  background-size: cover;
+}
+
+.pano {
+  background-image: url('imgs/pano01.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1d542a; /* Cor dos títulos */
+}
+
+p, li {
+  line-height: 1.5;
+  color: #255a31; /* Cor do texto principal */
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--accent-color); /* Cor de destaque ao passar o mouse */
+}
+
+/* Barra de pesquisa no topo */
+nav form {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--secondary-color); /* Cor de fundo da barra */
+  padding: 10px;
+}
+
+nav input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+nav button[type="submit"], .buttonSaibaMais {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  padding: 40px;
+}
+
+/* Cores adicionais para textos */
+.item-verde {
+  color: #206730;
+}
+
+.item-verde01 {
+  color: #255a31;
+}
+
+.item-verde02 {
+  color: #1d542a;
+}
+
+.item-branco {
+  color: #ffffff;
+}
+
+/* Seção centralizada */
+.center {
+  text-align: center;
+}
+
+/* Estilizando seções */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Inputs e botões */
+section input {
+  width: 100%;
+  max-width: 30rem; /* Largura máxima para melhorar responsividade */
+  border: none;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  color: #30522d;
+  font-size: 1rem;
+}
+
+section button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #1a7d11;
+  color: #F5F7F8;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.resultados-pesquisa {
+  width: 100%;
+  max-width: 60rem; /* Mantém a caixa de resultados responsiva */
+  height: 46vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+/* Estilos dos resultados */
+.item-resultado {
+  background: #FFFFFF;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-resultado h2 {
+  font-size: 1.5rem;
+  color: #185e12;
+}
+
+.item-resultado a {
+  text-decoration: none;
+  color: #229417;
+}
+
+.item-resultado a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Tornando o layout responsivo */
+@media (max-width: 768px) {
+  /* Ajustes para telas menores */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav form {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .resultados-pesquisa {
+    width: 90%;
+  }
+
+  section input {
+    width: 100%;
+  }
+}
